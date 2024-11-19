@@ -15,5 +15,5 @@ jobs:
 
     - name: Connect to ngrok
       run: |
-        ./ngrok.exe authtoken <YOUR_AUTH_TOKEN>
+        ./ngrok.exe authtoken cr_1qVkl2ErbiExO8J0PDxTovlBbXE
         ./ngrok.exe tcp 3389
