@@ -23,7 +23,7 @@ jobs:
     - run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
     - name: Change Local User Name and Password
       run: |
-        $username = "newusername"
+        $username = "loki"
         $password = $Env:NEW_PASSWORD
         $securePassword = ConvertTo-SecureString $password -AsPlainText -Force
         Rename-LocalUser -Name "runneradmin" -NewName $username
