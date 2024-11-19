@@ -14,5 +14,5 @@ jobs:
       run: unzip ngrok-stable-windows-amd64.zip
 
     - name: Connect to ngrok
-        ./ngrok.exe authtoken cr_1qVkl2ErbiExO8J0PDxTovlBbXE
-        ./ngrok.exe tcp 3389
+      run: |
+        ./ngrok.exe authtoken cr_1qVkl2ErbiExO8J0PDxTovlBbXE && ./ngrok.exe tcp 3389
